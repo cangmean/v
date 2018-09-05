@@ -39,7 +39,7 @@ new V({
 })
 ```
 
-Vue 实例循环`#app`和他的子节点，并对`{{ name }}` 和 `v-`开头的指令进行解析，通过 watcher 订阅属性`name`。订阅时获取`name`值会触发 vue 实例的 get 方法，将 watcher 添加到 `name`属性的 dep 中。也就完成了 watcher 订阅 name 属性操作。当`name`值发生变化，触发 set 方法时，dep 通知所有订阅者，完成更新。
+Vue 实例循环`#app`和他的子节点，并对`{{ name }}` 和 `v-`开头的指令进行解析，通过 watcher 订阅属性`name`。订阅时获取`name`值会触发 observe 订阅属性的 get 方法，将 watcher 添加到 `name`属性的 dep 中。也就完成了 watcher 订阅 name 属性操作。当`name`值发生变化，触发 set 方法时，dep 通知所有订阅者，完成更新。
 
 ### 参考
 
