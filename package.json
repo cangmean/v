@@ -1,7 +1,20 @@
 {
   "name": "v",
   "version": "1.0.0",
+  "main": "src/index.js",
   "repository": "https://github.com/cangmean/v.git",
   "author": "cangmean <cangmean@outlook.com>",
-  "license": ""
+  "license": "ISC",
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "7.1.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "copy-webpack-plugin": "^4.5.2",
+    "webpack": "3.6"
+  }
 }

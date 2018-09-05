@@ -8,9 +8,16 @@
   <title>Document</title>
 </head>
 
-
 <body>
+  <div id="app">
+    <p>{{ name }}</p>
+    <div>
+      <input type="text" v-model="name">
+      <button v-on:click="clickA">clickA</button>
+    </div>
+  </div>
 
+  <script src="./example.js"></script>
 </body>
 
 </html>
